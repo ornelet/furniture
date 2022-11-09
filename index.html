@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Заглушка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Заглушка</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
-</head>
-
-<body>
-  <header class="header">
-    <nav class="navbar">
-      <div class="container">
-        <div class="row">
-          <div id="logo">Logo</div>
-          <ul class="navlist">
-            <li class="navlist-item">
-              <a class="navlist-link" href="#">Каталог</a>
-            </li>
-            <li class="navlist-item">
-              <a class="navlist-link" href="#">О нас</a>
-            </li>
-            <li class="navlist-item">
-              <a class="navlist-link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <!-- <button type="button" class="call-btn">Звонок</button> -->
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="row items-center">
+            <div id="logo">Logo</div>
+            <ul class="navlist">
+              <li class="navlist-item">
+                <a class="navlist-link" href="#">Каталог</a>
+              </li>
+              <li class="navlist-item">
+                <a class="navlist-link" href="#">О нас</a>
+              </li>
+              <li class="navlist-item">
+                <a class="navlist-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="home">
+        <div class="container">
+          <div class="row home-inner">
+            <div class="controls">
+              <div class="controls-item active"></div>
+              <div class="controls-item"></div>
+              <div class="controls-item"></div>
+            </div>
+            <div class="home-heading">
+              <h1 class="main-heading">Modern</h1>
+              <button class="call-btn">Каталог</button>
+            </div>
+            <figure>
+              <img class="home-image" src="./chair.png" alt="Furniture" />
+            </figure>
+          </div>
         </div>
       </div>
-    </nav>
-    <div class="home">
-      <h1 class="main-heading">HOW MAY WE HELP</h1>
-      <button class="call-btn">Заказать звонок</button>
-    </div>
-  </header>
-</body>
-
+    </header>
+  </body>
 </html>

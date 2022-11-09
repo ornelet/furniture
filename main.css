@@ -17,6 +17,9 @@ button {
 .row {
   display: flex;
   justify-content: space-between;
+}
+
+.items-center {
   align-items: center;
 }
 
@@ -25,11 +28,13 @@ button {
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
 
   background: linear-gradient(0.2turn, #ddba9d, #9b7759);
 
-  color: #fff;
+  color: #eae0d5;
 }
 
 .navbar {
@@ -60,18 +65,25 @@ button {
 
 #logo {
   font-size: 2rem;
+  line-height: 1;
 }
 
 .call-btn {
   padding: 1rem 1.5rem;
   border: none;
   border-radius: 40px;
-  background: #333;
+  background: #6c584c;
   color: #fff;
 }
 
+
 .home {
-  text-align: center;
+  flex-grow: 1;
+}
+.home-inner {
+  box-sizing: border-box;
+  height: calc(100vh - 8rem);
+  padding-bottom: 3rem;
 }
 
 .main-heading {
@@ -83,4 +95,20 @@ button {
   font-size: 3rem;
   line-height: 1;
   letter-spacing: 0.1rem;
+}
+
+.controls {
+  width: 5px;
+  align-self: end;
+}
+
+.controls-item {
+  height: 3rem;
+  background: #fff;
+  margin-bottom: .5rem;
+  border-radius: 3px;
+}
+
+.controls-item.active {
+  background-color: #606c38;
 }
